@@ -1,0 +1,398 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website for recommended destinations in Vietnma with descriptions of cities, food, and activities">
+    <meta name="author" content="Chelsea Nguyen">
+    <title>Visit Vietnam</title>
+
+    <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!--google icons and fonts links-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <div class="container"> <!--container for page-->
+  
+    <div class="row"> <!--sticky navbar, layout from getbootstrap-->
+        <nav class="navbar fixed-top bg-body-tertiary navbar-expand-md"> 
+          
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Visit Vietnam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active alexandria" aria-current="page" href="#homesection">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link alexandria" href="#backgroundsection">Background</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link alexandria" href="#activitiessection">Activities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link alexandria" href="#foodsection">Food</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link alexandria" href="#authorsection">About the Author</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </div><!--close nav div-->
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0"> <!--div for body content-->
+      
+      <div class="row" id="homesection"> <!--image title div-->
+        <a class="main-image">
+          <img src="images/VietnamWelcome.JPG" class="img-fluid" alt="image header of view of Vietnam from airplane with 'Welcome' text on top">
+          <h1><span class="overlay-text alexandria">Visit Vietnam</span></h1>
+        </a>
+      </div> <!--close image title--> 
+
+      <div class="row section-padding" id="backgroundsection"> <!--main section div, layout from bootstrap-->
+        <div class="col-12"> <!--background div-->
+          <h2 class="alexandria">Background</h2>
+        </div>
+        <div class="col-md-10 offset-md-1">
+          <p>Welcome to Visit Vietnam!
+            Vietnam is an explosion of colors, tastes, and sounds, a place where ancient traditions blend seamlessly with modern vibes. 
+            From the dizzying energy of Ho Chi Minh City to the tranquil beauty of Phu Quoc, every corner of Vietnam offers something unique. 
+            Whether you're a thrill-seeker looking to conquer the world's largest cave, a culture enthusiast eager to wander through centuries-old temples, or a foodie ready to dive into the best pho and banh mi of your life, we've got you covered.
+            Dive into our list of places to visit, packed with everything from the bustling streets of Hoi An to the scenery of Ninh Binh. 
+            Get ready to embark on a journey filled with breathtaking landscapes, vibrant nightlife, and immersive cultural experiences that will leave you craving for more. 
+            Vietnam is not just a destination; it's an adventure waiting to happen. 
+            So, pack your bags, grab your friends, and let Vibrant Vietnam guide you through the trip of a lifetime!
+          </p>
+        </div> <!--close background div-->
+
+        <div class="section-padding" id="activitiessection"> <!--activities div-->
+          <h2 class="alexandria">Activities</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4"> <!--set up activity col.-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#basketboatModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/HoiAnActivity1.JPG" class="img-fluid card-img" alt="photo of basket boat ride">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="basketboatModal" tabindex="-1" aria-labelledby="basketboatModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="basketboatModalLabel">Basket Boat</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/HoiAnActivity1.JPG" class="img-fluid d-block w-100" alt="basket boat ride">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>Basket boat riding in Vietnam offers a unique and traditional way to explore the country's stunning waterways, particularly in the central regions like Hoi An. These round, bamboo boats, locally known as "Thung Chai," navigate through narrow canals, lush rice paddies, and serene coconut palm forests, offering a peaceful glimpse into rural Vietnamese life. The experience not only connects travelers with the simplicity and ingenuity of local fishing practices but also provides an opportunity for fun and memorable interactions with friendly locals.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#banahillsModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/HoiAnActivity3.JPG" class="img-fluid card-img" alt="photo of Golden (Hand) Bridge in Ba Na Hills">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="banahillsModal" tabindex="-1" aria-labelledby="banahillsModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="banahillsModalLabel">Ba Na Hills</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/HoiAnActivity3.JPG" class="img-fluid d-block w-100" alt="photo of Golden (Hand) Bridge in Ba Na Hills">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>Ba Na Hills is a spectacular resort complex located atop a mountain near Da Nang, Vietnam, offering breathtaking panoramic views of the surrounding countryside. Renowned for its giant, iconic hands holding up the Golden Bridge, it provides a surreal and picturesque experience for visitors. The area is accessible via one of the world's longest and highest cable car rides, adding an adventurous element to the journey. Ba Na Hills features a whimsical French village, meticulously designed to mimic the era of the 19th century, complete with cobblestone streets and European-style buildings. It offers a range of attractions, including amusement rides, a flower garden, and cultural performances, making it a unique blend of natural beauty and human creativity.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#hoianModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/HoiAnActivity4.JPG" class="img-fluid card-img" alt="photo of Hoi An night market">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="hoianModal" tabindex="-1" aria-labelledby="hoianModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="hoianModalLabel">Hoi An Night Market</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/HoiAnActivity4.JPG" class="img-fluid d-block w-100" alt="photo of Hoi An night market">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>The Hoi An Night Market, a vibrant and bustling attraction, comes to life every evening in the ancient town of Hoi An, Vietnam, illuminating the streets with a magical glow. Stretching along the banks of the Thu Bon River, this market is famous for its hundreds of lanterns that cast a warm, inviting light, creating a fairy-tale atmosphere. Visitors can browse through an array of stalls offering a variety of goods, from handcrafted souvenirs and traditional Vietnamese items to exquisite street food that tantalizes the taste buds. The air is filled with the enticing aromas of local dishes and the sound of vendors engaging with shoppers, adding to the lively ambiance. The Hoi An Night Market not only offers a memorable shopping experience but also provides a perfect backdrop for photographs, making it a must-visit destination for travelers looking to immerse themselves in the local culture.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#tamcocModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/NinhBinhActivity1.JPG" class="img-fluid card-img" alt="photo of temple on Tam Coc river ride">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="tamcocModal" tabindex="-1" aria-labelledby="tamcocModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="tamcocModalLabel">Tam Coc Boat Ride</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/NinhBinhActivity1.JPG" class="img-fluid d-block w-100" alt="photo of temple on Tam Coc river ride">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>Tam Coc, often referred to as the "Halong Bay on Land," is a stunning natural wonder located in the Ninh Binh Province of Vietnam, characterized by its dramatic landscape of limestone karst peaks and serene waterways. This picturesque region is best explored by a serene boat ride along the Ngo Dong River, where visitors can glide gently beneath towering cliffs and through natural caves carved by the river over millennia. The tranquil journey offers a close-up view of the lush, green rice paddies that line the riverbanks, tended by locals using traditional methods. The area is also known for its rich biodiversity and is a haven for birdwatchers and nature enthusiasts alike. Tam Coc's breathtaking scenery and peaceful atmosphere make it an essential escape for those seeking to experience Vietnam's natural beauty and rural charm.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#baidinhModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/NinhBinhActivity2.JPG" class="img-fluid card-img" alt="photo of Bai Dinh Pagoda">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="baidinhModal" tabindex="-1" aria-labelledby="baidinhModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="baidinhModalLabel">Bai Dinh Pagoda</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/NinhBinhActivity2.JPG" class="img-fluid d-block w-100" alt="photo of Bai Dinh Pagoda">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>Bai Dinh Pagoda, nestled in the heart of Ninh Binh Province, Vietnam, stands as the largest Buddhist temple complex in the country, blending spiritual significance with architectural grandeur. This sprawling complex is renowned for housing the largest bronze Buddha statue in Southeast Asia, alongside a collection of over 500 intricately carved Arhat statues. The temple's design is a harmonious blend of traditional Vietnamese architecture and modern construction techniques, creating a serene and majestic atmosphere. Visitors can explore its numerous temples, pagodas, and towers, each offering a unique glimpse into Buddhist philosophy and art. Surrounded by lush greenery and tranquil ponds, Bai Dinh Pagoda is not only a place of worship but also a serene retreat from the bustling world, attracting both pilgrims and tourists seeking peace and spiritual renewal.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#hangmuaModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/NinhBinhActivity3.JPG" class="img-fluid card-img" alt="Hang Mua mountain view from dragon">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="hangmuaModal" tabindex="-1" aria-labelledby="hangmuaModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="hangmuaModalLabel">Hang Mua</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/NinhBinhActivity3.JPG" class="img-fluid d-block w-100" alt="Hang Mua mountain view from dragon">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>Hang Mua, located in Ninh Binh Province of Vietnam, is famed for its stunning views atop Mua Cave Mountain, offering one of the most breathtaking panoramic vistas in the country. To reach the summit, visitors embark on a challenging climb of over 500 steps, a journey that is rewarded with unparalleled views of the surrounding limestone karsts and rice fields. The peak is often likened to a "Great Wall" of Vietnam, due to its impressive staircase that winds up the mountain side. At the top, a striking dragon statue awaits, symbolizing strength and ancient legends tied to the land. Hang Mua is not only a testament to the natural beauty of Vietnam but also a place of peace and contemplation, making it a must-visit for those seeking both adventure and serenity.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sunworldModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/PhuQuocActivity1.JPG" class="img-fluid card-img" alt="cable car ride over ocean in Phu Quoc">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="sunworldModal" tabindex="-1" aria-labelledby="sunworldModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="sunworldModalLabel">Sunworld</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/PhuQuocActivity1.JPG" class="img-fluid d-block w-100" alt="cable car ride over ocean in Phu Quoc">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>SunWorld Phu Quoc's cable cars offer an exhilarating journey over the pristine landscapes of Phu Quoc Island, Vietnam's gem in the Gulf of Thailand. With modern and comfortable cabins, passengers are treated to breathtaking aerial views of lush forests, turquoise seas, and idyllic beaches as they soar above the island. The cable car route connects various attractions within SunWorld Phu Quoc, including the amusement park, water park, and safari, providing a convenient and scenic way to explore the expansive resort complex. Visitors can enjoy the gentle sway of the cable cars while capturing stunning photographs and creating unforgettable memories against the backdrop of Phu Quoc's natural beauty. SunWorld Phu Quoc's cable cars offer not just transportation but also an unforgettable experience that showcases the island's charm from a unique perspective.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+
+            <div class="col"> <!--activity-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#nuocmamModal">
+                <div class="card text-bg-dark border-0"> <!--card-->
+                  <img src="images/PhuQuocActivity2.JPG" class="img-fluid card-img" alt="Big barrels of fish sauce">
+                </div> <!--close card-->
+              </button> 
+              <div class="modal fade" id="nuocmamModal" tabindex="-1" aria-labelledby="nuocmamModalLabel" aria-hidden="true"> <!--modal-->
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                  <div class="modal-content"> <!--modal content-->
+                    <div class="modal-header"> <!--modal header-->
+                      <h5 class="modal-title fs-5 alexandria" id="nuocmamModalLabel">Nuoc Mam Factory</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> <!--close modal-header-->
+                    <img src="images/PhuQuocActivity2.JPG" class="img-fluid d-block w-100" alt="Big barrels of fish sauce">
+                    <div class="modal-body"> <!--modal description-->
+                      <p>The Phu Quoc Nuoc Mam Factory is a fascinating destination located on Phu Quoc Island, Vietnam, offering visitors an insight into the traditional production of Vietnamese fish sauce, a staple in Vietnamese cuisine. This factory is renowned for producing some of the highest quality fish sauce in the world, made from a centuries-old method that involves fermenting anchovies in large wooden vats. Visitors can tour the facility to observe the intricate process firsthand, from the initial fermentation to the final bottling and packaging, learning about the importance of this condiment in Vietnamese culture and gastronomy. The air is rich with the pungent aroma of fermenting fish, a unique sensory experience that is integral to understanding the depth of flavor nuoc mam brings to dishes. The factory also features a shop where guests can purchase freshly bottled fish sauce, making it a popular stop for those looking to bring home a taste of Vietnam's culinary heritage.</p>
+                    </div> <!--close modal description-->
+                  </div> <!--close modal content-->
+                </div> <!--close modal-dialog-->
+              </div> <!--close modal-->
+            </div> <!--close activity-->
+            
+          <div class="col"> <!--activity-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pepperModal">
+              <div class="card text-bg-dark border-0"> <!--card-->
+                <img src="images/PhuQuocActivity3.JPG" class="img-fluid card-img" alt="young black pepper on the farm">
+              </div> <!--close card-->
+            </button> 
+            <div class="modal fade" id="pepperModal" tabindex="-1" aria-labelledby="pepperModal" aria-hidden="true"> <!--modal-->
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"> <!--open modal-->
+                <div class="modal-content"> <!--modal content-->
+                  <div class="modal-header"> <!--modal header-->
+                    <h5 class="modal-title fs-5 alexandria" id="pepperModalLabel">Black Pepper Farm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div> <!--close modal-header-->
+                  <img src="images/PhuQuocActivity3.JPG" class="img-fluid d-block w-100" alt="young black pepper on the farm">
+                  <div class="modal-body"> <!--modal description-->
+                    <p>Phu Quoc black pepper is renowned worldwide for its exceptional quality and robust flavor, cultivated on the fertile soils of Phu Quoc Island, Vietnam. Known as the "King of Spices," this pepper is celebrated for its bold and aromatic taste, with a unique balance of heat and depth. Grown in the island's favorable tropical climate, the peppercorns develop a distinct peppery aroma and a rich, earthy flavor profile that enhances a wide range of dishes. Visitors can explore pepper plantations on the island, witnessing the meticulous process of cultivation, harvesting, and drying, which has been passed down through generations. Whether used as a seasoning or enjoyed in its purest form, Phu Quoc black pepper offers a culinary experience that is both exquisite and unforgettable.</p>
+                  </div> <!--close modal description-->
+                </div> <!--close modal content-->
+              </div> <!--close modal-dialog-->
+            </div> <!--close modal-->
+          </div> <!--close activity-->
+        </div> <!--close activites div-->
+        </div>
+          
+        <div  class="row section-padding" id="foodsection"><!--food div-->
+          <h2 class="alexandria">Food</h2>
+          <div id="carouselFoodIndicators" class="carousel slide col-md-6 offset-md-3">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/HoiAnFood3.JPG" class="d-block w-100" alt="banh mi">
+              </div>
+              <div class="carousel-item">
+                <img src="images/NinhBinhFood1.JPG" class="d-block w-100" alt="goat dish">
+              </div>
+              <div class="carousel-item">
+                <img src="images/PhuQuocFood1.JPG" class="d-block w-100" alt="crab fried rice">
+              </div>
+              <div class="carousel-item active">
+                <img src="images/PhuQuocFood2.JPG" class="d-block w-100" alt="salted fried crab">
+              </div>
+              <div class="carousel-item">
+                <img src="images/PhuQuocFood3.JPG" class="d-block w-100" alt="bun quay">
+              </div>
+              <div class="carousel-item">
+                <img src="images/PhuQuocFood5.JPG" class="d-block w-100" alt="grilled crab">
+              </div>
+              <div class="carousel-item active">
+                <img src="images/SaigonFood1.JPG" class="d-block w-100" alt="lime slushee">
+              </div>
+              <div class="carousel-item">
+                <img src="images/SaigonFood2.JPG" class="d-block w-100" alt="che thai and ice cream">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFoodIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div> <!--close food div-->
+
+          <div class="section-padding" id="authorsection"><!--footer div-->
+            <h2 class="alexandria">About the Author</h2>
+            <div class="row"> <!--footer content div-->
+              <div class="col-3 profile-image"> <!--image div-->
+                <img src="images/profile.jpg" alt="photo of Chelsea Nguyen" width="250">
+              </div>
+              <div class="col-3"> <!--bio div-->
+                <p>I'm Chelsea Nguyen, a junior at James Madison University majoring in Media Arts and Design with a concentration in Interactive Design, and I am also minoring in Art. 
+                  I made this website for a project I am doing in SMAD 307, and based it off my first trip to Vietnam. I hope you enjoy learning a little more about Vietnam and visit soon!</p>
+              </div> <!--close bio div-->
+
+              <div class="col-2"></div>
+
+              <div class="col-3"> <!--feedback div-->
+                <h5>Send a message!</h5>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <div class="input-group input-group-sm mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-s">Message</span>
+                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-s">
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button class="btn btn-primary" type="button">Submit</button>
+                </div>
+              </div> <!--close feedback div-->
+            </div>
+          </div>
+
+            <div class="row"> <!--links div-->
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <address>
+                    <a class="nav-link active" aria-current="page" href="mailto:nguye3cy@dukes.jmu.edu">
+                      Email
+                    </a>
+                  </address>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="www.linkedin.com/in/chelsea-nguyen-39403b231" target="_blank">
+                    LinkedIn
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    Instagram
+                  </a>
+                </li>
+              </ul>
+            </div> <!--close links div-->
+            </div> <!--close footer content div-->
+          </div> <!--close footer div-->   
+
+
+    </div>
+
+    <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+          
+  </body>
+</html>
